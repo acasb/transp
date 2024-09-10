@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+body {
+    background-color: rgb(202, 197, 197);
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: white;
+    margin: auto;
+}
+header h1 {
+    padding: .4em;
+    font-size: 40px;
+}
+
+main h1 {
+   text-align: center;
+   padding: 1em;
+}
+
+main h2 {
+    padding: .5em;
+}
+
+.mapa {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.cadastros {
+    margin-top: 3em;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.cadastros h1{
+    background-color: purple;
+    color: white;
+}
+
+
+.cadastros h2 {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.responsavel{
+    padding-left: 5em;
+    
+}
+
+.card{
+    padding-left: 5em;
+    flex-grow: 1;
+    background-color: rgb(247, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgb(218, 213, 213);
+    max-width: 400px;    
+}
+
+.card_terminais{
+    display: flex;
+    gap: 16px;
+}
+
+.descargas h1{
+    background-color: purple;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.descargas {
+    padding: 1em;
+}
+
+h4 {
+    padding: 2em;
+}
