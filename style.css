@@ -63,7 +63,7 @@ main h2 {
 }
 
 .card{
-    padding-left: 5em;
+    padding-left: 2em;
     flex-grow: 1;
     background-color: rgb(247, 241, 241);
     border-radius: 10px;
@@ -88,4 +88,20 @@ main h2 {
 
 h4 {
     padding: 2em;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: .5em;
+    text-align: center;
+}
+
+a {
+    color: white;
+
+}
+
+a:hover {
+    color: lightgray;
 }
