@@ -106,3 +106,8 @@ a:hover {
     background-color: lightgrey;
     color: blue;
 }
+
+.pdescargas {
+    background-color: palevioletred;
+    background-image: linear-gradient(to right, palevioletred, white);
+}
