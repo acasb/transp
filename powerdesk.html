@@ -1,41 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manual do transportador - Base de Suape</title>
 
-    <link rel="shortcut icon" href="imagens/ra.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/ra.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        <h1>Manual do transportador</h1>
-
-        <h2>Base de Suape</h2>
-
-        <br><br>
+        <div class="header-content">
+            <h1>Manual do transportador</h1>
+            <h2>Base de Suape</h2>
+        </div>
 
         <nav>
             <a href="index.html"><b>Início</b></a>
             <a href="cadastros.html"><b>Cadastros</b></a>
             <a href="descargas.html"><b>Descargas</b></a>
             <a href="carregamentos.html"><b>Carregamentos</b></a>
-            <a href="powerdesk.html"><b>Power Desk</b></a>
+            <a href="powerdesk.html" class="active"><b>Base Digital</b></a>
         </nav>
-
     </header>
 
     <main>
-       
-            <h1>Treinamento Power Desk</h1>
-
-            <h2>Link de acesso ao treinamento: <a href="Detalhes - Power Desk v2.pdf"> Power Desk</a></h2>
-
-
+        <div class="page-header">
+            <h1>🏢 Base Digital</h1>
+            <p>Localização e informações sobre a base digital da Raízen no pátio da ELOG</p>
         </div>
 
+        <!-- Seção de localização -->
+        <div class="location-section">
+            <div class="location-info">
+                <h2>📍 Onde fica a base digital?</h2>
+                <div class="location-details">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Endereço:</strong>
+                            <p>Pátio da ELOG - Complexo de Suape</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🗺️</span>
+                        <div>
+                            <strong>Referência:</strong>
+                            <p>Base digital da Raízen no pátio de triagem da ELOG</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <strong>Horário de funcionamento:</strong>
+                            <p>Segunda a Sexta: 00:00 - 20:00</p>
+                            <p>Sábados: 00:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4682.672643257106!2d-34.995000324242575!3d-8.33933118399247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aaef566bb73fc9%3A0x6fa6cecabba79853!2sE-log%20P%C3%A1tio%20de%20Triagem!5e1!3m2!1spt-BR!2sbr!4v1784647354198!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Mapa da Base Digital - Pátio ELOG"
+                ></iframe>
+            </div>
+        </div>
+
+        <!-- Seção de informações adicionais -->
+        <div class="base-info-section">
+            <h2>ℹ️ Informações sobre a Base Digital</h2>
+            
+            <div class="base-info-grid">
+                <div class="base-info-card">
+                    <div class="base-info-icon">🖥️</div>
+                    <h3>O que é a Base Digital?</h3>
+                    <p>A Base Digital é o ponto de atendimento aos motoristas para:</p>
+                    <ul>
+                        <li>Retirada de lacres</li>
+                        <li>Confirmação de agendamentos</li>
+                        <li>Orientação para operações</li>
+                        <li>Emissão de documentos</li>
+                    </ul>
+                </div>
+
+                
+                <div class="base-info-card">
+                    <div class="base-info-icon">🚛</div>
+                    <h3>Como chegar</h3>
+                    <ul>
+                        <li>Entre no Complexo de Suape</li>
+                        <li>Siga em direção ao pátio da ELOG</li>
+                        <li>Localize a base digital da Raízen</li>
+                        <li>Estacione no local indicado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de dicas -->
+        <div class="tips-section">
+            <div class="tips-container">
+                <h3>💡 Dicas para sua visita à Base Digital</h3>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <span class="tip-icon">📄</span>
+                        <div>
+                            <h4>Documentação em ordem</h4>
+                            <p>Tenha todos os documentos atualizados e em mãos</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-icon">⏰</span>
+                        <div>
+                            <h4>Chegue com antecedência</h4>
+                            <p>Evite atrasos, chegue 15 minutos antes do horário agendado</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-icon">📱</span>
+                        <div>
+                            <h4>Use o Power Desk</h4>
+                            <p>Utilize a plataforma para agilizar seus processos</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-icon">🤝</span>
+                        <div>
+                            <h4>Comunique-se</h4>
+                            <p>Qualquer dúvida, procure a equipe da base</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links rápidos -->
+        <div class="quick-links">
+            <h3>🔗 Links úteis</h3>
+            <div class="links-grid">
+                <a href="cadastros.html" class="quick-link">
+                    <span class="link-icon">📋</span>
+                    Cadastros
+                </a>
+                <a href="descargas.html" class="quick-link">
+                    <span class="link-icon">⬇️</span>
+                    Descargas
+                </a>
+                <a href="carregamentos.html" class="quick-link">
+                    <span class="link-icon">⬆️</span>
+                    Carregamentos
+                </a>
+                <a href="mailto:triagem.suape@raizen.com" class="quick-link">
+                    <span class="link-icon">📧</span>
+                    Contato
+                </a>
+            </div>
+        </div>
     </main>
-    
+
+    <footer>
+        <p>&copy; 2024 Raízen - Base de Suape. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

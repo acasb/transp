@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manual do transportador - Base de Suape</title>
 
-    <link rel="shortcut icon" href="Imagens/ra.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
+    <link rel="shortcut icon" href="Imagens/ra.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        <h1>Manual do transportador</h1>
-
-        <h2>Base de Suape</h2>
-
-        <br><br>
+        <div class="header-content">
+            <h1>Manual do transportador</h1>
+            <h2>Base de Suape</h2>
+        </div>
 
         <nav>
-            <a href="index.html"><b>Início</b></a>
+            <a href="index.html" class="active"><b>Início</b></a>
             <a href="cadastros.html"><b>Cadastros</b></a>
             <a href="descargas.html"><b>Descargas</b></a>
             <a href="carregamentos.html"><b>Carregamentos</b></a>
-            <a href="powerdesk.html"><b>Power Desk</b></a>
+            <a href="powerdesk.html"><b>Base Digital</b></a>
         </nav>
-
     </header>
 
     <main>
-        <div class="mapa">
-            <h1>Onde estamos</h1>
-            
-            <h2>Mapa do Complexo de Suape</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9713.396378992271!2d-34.973416923877764!3d-8.398620520430295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aaec627d7a5d31%3A0x8c948aa3b9f785f8!2sRaizen!5e1!3m2!1spt-BR!2sbr!4v1725635178435!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Manual do Transportador</h1>
+                <p>Base de Suape - Raízen</p>
+                <p class="hero-description">
+                    Este manual foi desenvolvido para auxiliar os transportadores 
+                    parceiros com informações essenciais sobre cadastros, descargas, 
+                    carregamentos e demais procedimentos operacionais.
+                </p>
+            </div>
+        </section>
+
+        <section class="info-cards">
+            <div class="info-card">
+                <div class="info-icon">📋</div>
+                <h3>Cadastros</h3>
+                <p>Documentação necessária para motoristas e veículos nos diferentes terminais</p>
+                <a href="cadastros.html" class="btn">Ver mais</a>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">⬇️</div>
+                <h3>Descargas</h3>
+                <p>Procedimentos para agendamento e realização de descargas</p>
+                <a href="descargas.html" class="btn">Ver mais</a>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">⬆️</div>
+                <h3>Carregamentos</h3>
+                <p>Passo a passo para agendamento e execução de carregamentos</p>
+                <a href="carregamentos.html" class="btn">Ver mais</a>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">💻</div>
+                <h3>Power Desk</h3>
+                <p>Treinamento e acesso à plataforma Power Desk</p>
+                <a href="powerdesk.html" class="btn">Ver mais</a>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <h2>📍 Onde estamos</h2>
+            <h3>Mapa do Complexo de Suape</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9713.396378992271!2d-34.973416923877764!3d-8.398620520430295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aaec627d7a5d31%3A0x8c948aa3b9f785f8!2sRaizen!5e1!3m2!1spt-BR!2sbr!4v1725635178435!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa da Raízen em Suape"
+                ></iframe>
+            </div>
+        </section>
 
         <address>
-            <p>Rodovia PE 60 Km 10 S/N</p>
-            <p>CEP: 55590-000</p>
-            <p>Porto de Suape - Ipojuca / PE</p>
-            <p>Fone: 81 3501 4510</p>
-            <p>E-mail: <a href="mailto:triagem.suape@raizen.com">triagem.suape@raizen.com</a></p>
+            <div class="address-content">
+                <h3>📞 Contato</h3>
+                <p><strong>Endereço:</strong> Rodovia PE 60 Km 10 S/N</p>
+                <p><strong>CEP:</strong> 55590-000</p>
+                <p><strong>Local:</strong> Porto de Suape - Ipojuca / PE</p>
+                <p><strong>Telefone:</strong> <a href="tel:+558135014510">(81) 3501-4510</a></p>
+                <p><strong>E-mail:</strong> <a href="mailto:triagem.suape@raizen.com">triagem.suape@raizen.com</a></p>
+            </div>
         </address>
-
-        <br><br>
-
     </main>
-    
+
+    <footer>
+        <p>&copy; 2026 Raízen - Base de Suape. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

@@ -1,62 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manual do transportador - Base de Suape</title>
 
-    <link rel="shortcut icon" href="imagens/ra.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/ra.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        <h1>Manual do transportador</h1>
-
-        <h2>Base de Suape</h2>
-
-        <br><br>
+        <div class="header-content">
+            <h1>Manual do transportador</h1>
+            <h2>Base de Suape</h2>
+        </div>
 
         <nav>
             <a href="index.html"><b>Início</b></a>
             <a href="cadastros.html"><b>Cadastros</b></a>
-            <a href="descargas.html"><b>Descargas</b></a>
+            <a href="descargas.html" class="active"><b>Descargas</b></a>
             <a href="carregamentos.html"><b>Carregamentos</b></a>
-            <a href="powerdesk.html"><b>Power Desk</b></a>
+            <a href="powerdesk.html"><b>Base Digital</b></a>
         </nav>
-
     </header>
 
     <main>
-
-        <div class="descargas">
-
-            <h1>Agendamento de descargas</h1>
-
-            <p>Para a realização das descargas, deverão ser seguidos os passos descritos abaixo:</p><br><br>
-
-            <section class="card_terminais">
-                <ul class="card">
-                    <p class="pdescargas"><b>Transportador</b></p><br>
-                    <li>Agendar a operação no <a href="https://coletaonline.raizen.com/ColetaOnline/Pages/Login.aspx?ReturnUrl=%2fColetaOnline%2fPages%2fLogout.aspx">Portal Coleta;</a></li><br>
-                    <li>Acessar o <a href="https://apps.powerapps.com/play/e/default-e7c411a6-9013-4967-a5b1-3d08f9edc13e/a/4824921f-fefe-4350-8e67-94d9b8adac2e?tenantId=e7c411a6-9013-4967-a5b1-3d08f9edc13e&hint=b337be86-8520-4c76-9a70-3f3ed5e4d2ed&source=sharebutton&sourcetime=1716489305712&source=teamsLinkUnfurling">Power Desk</a> para envio de documentos e informações acerca da operação;</li><br>
-                    <li>Caso o transportador não tenha acesso ao Power Desk, deve-se enviar a nota fiscal e o laudo para email <a href="mailto:triagem.suape@raizen.com">triagem.suape@raizen.com</a></li><br>
-                    <li>Informar as placas do ct, setas em que foram carregadas, cpf do motorista e horário pretendido para descarga.</li><br>
-                    <li>Enviar notas, laudos e tickets de carregamento</li>
-                    <li>Importante enviar documentos Legíveis.</li><br><br>               
-                    <p class="pdescargas"><b>Base</b></p><br>
-                    <li>Enviar o espelho e o agendamento para o transportador.</li><br>
-                    <br><br>
-                    <p class="pdescargas"><b>Motorista</b></p><br>
-                    <li>Imprimir no Pátio de triagem o agendamento que a Raízen enviou ao Transportador</li><br>
-                    <li>Realiza a descarga do CT no local indicado e está liberado para a próxima operação.</li>
-                </ul>
-            </section>
-
-         
+        <div class="page-header">
+            <h1>⬇️ Agendamento de descargas</h1>
+            <p>Procedimentos para agendamento e realização de descargas na Base de Suape</p>
         </div>
 
-        <br>
+        <div class="process-flow">
+            <div class="flow-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <h3>Agendamento no Portal Coleta</h3>
+                        <p>O transportador deve agendar a operação no Portal Coleta da Raízen</p>
+                        <a href="https://coletaonline.raizen.com/ColetaOnline/Pages/Login.aspx?ReturnUrl=%2fColetaOnline%2fPages%2fLogout.aspx" target="_blank" class="btn-action">
+                            🔗 Acessar Portal Coleta
+                        </a>
+                    </div>
+                </div>
 
+
+                <div class="step-arrow">↓</div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <h3>Envio dos documentos por e-mail</h3>
+                        <p>Enviar as notas fiscais e laudos por email, conforme abaixo:</p>
+                        <a href="mailto:triagem.suape@raizen.com" class="btn-action">
+                            📧 triagem.suape@raizen.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-requirements">
+            <div class="info-card-requirements">
+                <h3>📋 Informações necessárias</h3>
+                <ul class="requirements-list">
+                    <li>🚛 Placas do caminhão tanque (CT)</li>
+                    <li>🛢️ Setas em que foram carregadas</li>
+                    <li>👤 CPF do motorista</li>
+                    <li>⏰ Horário pretendido para descarga</li>
+                </ul>
+                <div class="important-note">
+                    <span class="note-icon">⚠️</span>
+                    <p><strong>Importante:</strong> Enviar documentos legíveis!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="process-cards">
+            <div class="process-card">
+                <div class="process-icon">🏢</div>
+                <h3>Transportador</h3>
+                <ul class="process-list">
+                    <li>Agendar a operação no <a href="https://coletaonline.raizen.com/ColetaOnline/Pages/Login.aspx?ReturnUrl=%2fColetaOnline%2fPages%2fLogout.aspx" target="_blank">Portal Coleta</a></li>
+                    <li>Enviar NF e laudo para <a href="mailto:triagem.suape@raizen.com">triagem.suape@raizen.com</a></li>
+                    <li>Informar placas do CT, setas, CPF do motorista e horário pretendido</li>
+                    <li>Enviar documentos legíveis</li>
+                </ul>
+            </div>
+
+            <div class="process-card">
+                <div class="process-icon">⛽</div>
+                <h3>Base</h3>
+                <ul class="process-list">
+                    <li>Validar documentos recebidos</li>
+                    <li>Enviar o espelho e o agendamento para o transportador</li>
+                    <li>Confirmar agendamento</li>
+                </ul>
+            </div>
+
+            <div class="process-card">
+                <div class="process-icon">🚛</div>
+                <h3>Motorista</h3>
+                <ul class="process-list">
+                    <li>Realizar a descarga do CT no local indicado</li>
+                    <li>Aguardar confirmação da descarga</li>
+                    <li>Estar liberado para a próxima operação</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <h3>🔗 Links úteis</h3>
+            <div class="links-grid">
+                <a href="https://coletaonline.raizen.com/ColetaOnline/Pages/Login.aspx?ReturnUrl=%2fColetaOnline%2fPages%2fLogout.aspx" target="_blank" class="quick-link">
+                    <span class="link-icon">📋</span>
+                    Portal Coleta
+                </a>
+                <a href="https://apps.powerapps.com/play/e/default-e7c411a6-9013-4967-a5b1-3d08f9edc13e/a/4824921f-fefe-4350-8e67-94d9b8adac2e?tenantId=e7c411a6-9013-4967-a5b1-3d08f9edc13e&hint=b337be86-8520-4c76-9a70-3f3ed5e4d2ed&source=sharebutton&sourcetime=1716489305712&source=teamsLinkUnfurling" target="_blank" class="quick-link">
+                    <span class="link-icon">💻</span>
+                    Power Desk
+                </a>
+                <a href="mailto:triagem.suape@raizen.com" class="quick-link">
+                    <span class="link-icon">📧</span>
+                    E-mail Suape
+                </a>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Raízen - Base de Suape. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
